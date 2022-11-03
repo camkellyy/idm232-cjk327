@@ -10,11 +10,16 @@ h1 {
     font-family: "Impact";
     font-size: 6rem;
     margin: 0;
+    text-align: center;
 }
 
 h2 {
     color: white;
     margin-bottom: 4rem;
+}
+
+.header-blurb {
+    text-align: center;
 }
 
 p {

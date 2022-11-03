@@ -28,4 +28,4 @@
     </nav>
     <header>
         <h1><?php echo"$header"; ?></h1>
-        <h2><?php echo"$headerText"; ?></h2>
+        <h2 class="header-blurb"><?php echo"$headerText"; ?></h2>
