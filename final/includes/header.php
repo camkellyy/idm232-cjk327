@@ -21,7 +21,7 @@
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="./index.php">Categories</a></li>
+            <li><a href="./categories.php">Categories</a></li>
             <li><a href="./search.php">Search</a></li>
             <li><button class="login-button" href="#">Login</button></li>
         </ul>

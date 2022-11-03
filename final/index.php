@@ -1,135 +1,72 @@
 <?php 
 $title = "Details";
-$header = "Lunch";
-$headerText = "Filter through our delicious lunch recipes below!";
+$header = "Garden Salad";
+$headerText = "View the ingredients and recipe steps below!";
 include_once 'includes/header.php';
 ?>
 
-       
-       <div class="filters">
-        <div class="filters-1">
-                <p class="main-filters main-filter-breakfast">BREAKFAST</p>
-                <p class="main-filters main-filter-lunch">LUNCH</p>
-            </div>
-
-            <div class="filters-2">
-                <p class="main-filters main-filter-dinner">DINNER</p>
-                <p class="main-filters main-filter-dessert">DESSERT</p>
-            </div>
-       </div>
     </header>
 
-    <div class="sub-filters-all">
-        <div class="sub-filters-group1">
-            <div class="sub-filters-row1">
-                <div class="sub-filters sub-filter-breakfast">TACOS</div>
-                <div class="sub-filters sub-filter-lunch">CHICKEN</div>
-                <div class="sub-filters sub-filter-dinner">SALADS</div>
+    <div class="details-container">
+        <div class="overview">
+            <div class="overview-line1">
+                <h2 class="ingredients-headers">OVERVIEW</h2>
+                <p>5 mins | cals. 550</p>
+            </div>
+            <p class="overview-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not </p>
+        </div>
+
+        <div class="ingredients">
+            <h2 class="ingredients-headers">INGREDIENTS</h2>
+
+            <div class="ingredients-row1">
+                <input type="checkbox" id="ing1" name="ing1">
+                <label for="ing1">Lorem Ipsum</label><br>
+
+                <input type="checkbox" id="ing2" name="ing2">
+                <label for="ing2">Lorem Ipsum</label><br>
+
+                <input type="checkbox" id="ing3" name="ing3">
+                <label for="ing3">Lorem Ipsum</label><br>
             </div>
 
-            <div class="sub-filters-row2">
-                <div class="sub-filters sub-filter-dessert">VEGAN</div>
-                <div class="sub-filters sub-filter-dessert">PROTEIN</div>
+            <div class="ingredients-row2">
+                <input type="checkbox" id="ing4" name="ing4">
+                <label for="ing4">Lorem Ipsum</label><br>
+
+                <input type="checkbox" id="ing5" name="ing5">
+                <label for="ing5">Lorem Ipsum</label><br>
+
+                <input type="checkbox" id="ing6" name="ing6">
+                <label for="ing6">Lorem Ipsum</label><br>
             </div>
         </div>
-        
-        <div class="sub-filters-group2">
-            <div class="sub-filters-row3">
-                <div class="sub-filters sub-filter-lunch">SOUPS</div>
-                <div class="sub-filters sub-filter-dinner">SANDWICHES</div>
+
+        <div class="recipe">
+            <h2 class="ingredients-headers">RECIPE</h2>
+
+            <div class="step1">
+                <h4>Step 1.</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
             </div>
 
-            <div class="sub-filters-row4">
-                <div class="sub-filters sub-filter-dessert">VEGITARIAN</div>
-                <div class="sub-filters sub-filter-dessert">SEAFOOD</div>
+            <div class="step2">
+                <h4>Step 2.</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            </div>
+
+            <div class="step3">
+                <h4>Step 3.</h4>
+                <p>Lorem Ipsum is simply dummy text</p>
+            </div>
+
+            <div class="step4">
+                <h4>Step 4.</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not</p>
             </div>
         </div>
-    </div>
-
-    <div class="recipe-container">
-        <div class="recipe-row">
-            <div class="recipe">
-                <a href="details.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
-                <div class="top-line">
-                    <h3>Garden Salad</h4>
-                    <p>450 cals.</p>
-                </div>
-                <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . . 5 mins</p>
-            </div>
-
-            <div class="recipe">
-                <a href="details.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
-                <div class="top-line">
-                    <h3>Garden Salad</h4>
-                    <p>450 cals.</p>
-                </div>
-                <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . . 5 mins</p>
-            </div>
-
-            <div class="recipe recipe-1">
-                <a href="details.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
-                <div class="top-line">
-                    <h3>Garden Salad</h4>
-                    <p>450 cals.</p>
-                </div>
-                <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . . 5 mins</p>
-            </div>
-
-            <div class="recipe recipe-1">
-                <a href="details.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
-                <div class="top-line">
-                    <h3>Garden Salad</h4>
-                    <p>450 cals.</p>
-                </div>
-                <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . . 5 mins</p>
-            </div>
-
-            <div class="recipe">
-                <a href="details.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
-                <div class="top-line">
-                    <h3>Garden Salad</h4>
-                    <p>450 cals.</p>
-                </div>
-                <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . . 5 mins</p>
-            </div>
-
-            <div class="recipe recipe-1">
-                <a href="details.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
-                <div class="top-line">
-                    <h3>Garden Salad</h4>
-                    <p>450 cals.</p>
-                </div>
-                <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . . 5 mins</p>
-            </div>
-
-            <div class="recipe recipe-1">
-                <a href="details.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
-                <div class="top-line">
-                    <h3>Garden Salad</h4>
-                    <p>450 cals.</p>
-                </div>
-                <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . . 5 mins</p>
-            </div>
-
-            <div class="recipe recipe-1">
-                <a href="details.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
-                <div class="top-line">
-                    <h3>Garden Salad</h4>
-                    <p>450 cals.</p>
-                </div>
-                <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . . 5 mins</p>
-            </div>
-
-            <div class="recipe recipe-1">
-                <a href="details.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
-                <div class="top-line">
-                    <h3>Garden Salad</h4>
-                    <p>450 cals.</p>
-                </div>
-                <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . . 5 mins</p>
-            </div>
         </div>
-    </div>
+
 
 </body>
 </html>
