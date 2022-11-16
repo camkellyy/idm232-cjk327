@@ -2,7 +2,8 @@
 $title = "Details";
 $header = "Lunch";
 $headerText = "Filter through our delicious lunch recipes below!";
-include_once 'includes/header.php';
+include_once 'app.php';
+include_once '_components/header.php';
 ?>
 
        
@@ -49,7 +50,7 @@ include_once 'includes/header.php';
     <div class="recipe-container">
         <div class="recipe-row">
             <div class="recipe">
-                <a href="index.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
+                <a href="index.php"><img src="dist/images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
                 <div class="top-line">
                     <h3>Garden Salad</h4>
                     <p>450 cals.</p>
@@ -58,7 +59,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe">
-                <a href="index.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
+                <a href="index.php"><img src="dist/images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
                 <div class="top-line">
                     <h3>Garden Salad</h4>
                     <p>450 cals.</p>
@@ -67,7 +68,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <a href="index.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
+                <a href="index.php"><img src="dist/images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
                 <div class="top-line">
                     <h3>Garden Salad</h4>
                     <p>450 cals.</p>
@@ -76,7 +77,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <a href="index.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
+                <a href="index.php"><img src="dist/images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
                 <div class="top-line">
                     <h3>Garden Salad</h4>
                     <p>450 cals.</p>
@@ -85,7 +86,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe">
-                <a href="index.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
+                <a href="index.php"><img src="dist/images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
                 <div class="top-line">
                     <h3>Garden Salad</h4>
                     <p>450 cals.</p>
@@ -94,7 +95,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <a href="index.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
+                <a href="index.php"><img src="dist/images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
                 <div class="top-line">
                     <h3>Garden Salad</h4>
                     <p>450 cals.</p>
@@ -103,7 +104,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <a href="index.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
+                <a href="index.php"><img src="dist/images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
                 <div class="top-line">
                     <h3>Garden Salad</h4>
                     <p>450 cals.</p>
@@ -112,7 +113,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <a href="index.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
+                <a href="index.php"><img src="dist/images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
                 <div class="top-line">
                     <h3>Garden Salad</h4>
                     <p>450 cals.</p>
@@ -121,7 +122,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <a href="index.php"><img src="images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
+                <a href="index.php"><img src="dist/images/asian-salad.png" alt="Asian Salad" class="recipe-img"></a>
                 <div class="top-line">
                     <h3>Garden Salad</h4>
                     <p>450 cals.</p>
@@ -135,5 +136,5 @@ include_once 'includes/header.php';
 </html>
 
 <?php 
-include_once 'includes/footer.php'; 
+include_once '_components/footer.php'; 
 ?>

@@ -2,11 +2,12 @@
 $title = "Search";
 $header = "Search";
 $headerText = "Search through our delicious and health concious recipes!";
-include_once 'includes/header.php';
+include_once 'app.php';
+include_once '_components/header.php';
 ?>
 
         <div class="search">
-            <img src="images/search.png" alt="Search Icon" class="search-icon">
+            <img src="dist/images/search.png" alt="Search Icon" class="search-icon">
             <input type="text" name="" placeholder="Search . . .">
         </div>
     </header>
@@ -14,7 +15,7 @@ include_once 'includes/header.php';
     <div class="recipe-container">
         <div class="recipe-row">
             <div class="recipe recipe-1">
-                <img src="images/the-classic.png" alt="The Classic" class="recipe-img">
+                <img src="dist/images/the-classic.png" alt="The Classic" class="recipe-img">
                 <div class="top-line">
                     <h3>The Classic</h4>
                     <p>500 cals.</p>
@@ -23,7 +24,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <img src="images/the-classic.png" alt="The Classic" class="recipe-img">
+                <img src="dist/images/the-classic.png" alt="The Classic" class="recipe-img">
                 <div class="top-line">
                     <h3>The Classic</h4>
                     <p>500 cals.</p>
@@ -32,7 +33,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <img src="images/the-classic.png" alt="The Classic" class="recipe-img">
+                <img src="dist/images/the-classic.png" alt="The Classic" class="recipe-img">
                 <div class="top-line">
                     <h3>The Classic</h4>
                     <p>500 cals.</p>
@@ -41,7 +42,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <img src="images/the-classic.png" alt="The Classic" class="recipe-img">
+                <img src="dist/images/the-classic.png" alt="The Classic" class="recipe-img">
                 <div class="top-line">
                     <h3>The Classic</h4>
                     <p>500 cals.</p>
@@ -50,7 +51,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <img src="images/the-classic.png" alt="The Classic" class="recipe-img">
+                <img src="dist/images/the-classic.png" alt="The Classic" class="recipe-img">
                 <div class="top-line">
                     <h3>The Classic</h4>
                     <p>500 cals.</p>
@@ -59,7 +60,7 @@ include_once 'includes/header.php';
             </div>
 
             <div class="recipe recipe-1">
-                <img src="images/the-classic.png" alt="The Classic" class="recipe-img">
+                <img src="dist/images/the-classic.png" alt="The Classic" class="recipe-img">
                 <div class="top-line">
                     <h3>The Classic</h4>
                     <p>500 cals.</p>
@@ -74,5 +75,5 @@ include_once 'includes/header.php';
 </html>
 
 <?php 
-include_once 'includes/footer.php'; 
+include_once '_components/footer.php'; 
 ?>

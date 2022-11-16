@@ -2,7 +2,8 @@
 $title = "Details";
 $header = "Garden Salad";
 $headerText = "View the ingredients and recipe steps below!";
-include_once 'includes/header.php';
+include_once 'app.php';
+include_once '_components/header.php';
 ?>
 
     </header>
@@ -72,5 +73,5 @@ include_once 'includes/header.php';
 </html>
 
 <?php 
-include_once 'includes/footer.php'; 
+include_once '_components/footer.php'; 
 ?>
