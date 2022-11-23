@@ -5,12 +5,12 @@ if (!isset($recipes)) {
 ?>
 <table>
   <thead>
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Title</th>
-      <th scope="col">Calories</th>
-      <th scope="col">Cook Time</th>
-      <th scope="col"><span>Overview</span></th>
+    <tr class="table-row-header">
+      <!-- <td class="table-header" scope="col">ID</td> -->
+      <td class="table-header table-title" scope="col">Title</td>
+      <td class="table-header table-nums" scope="col">Calories</td>
+      <td class="table-header table-nums" scope="col">Time</td>
+      <!-- <td class="table-header" scope="col"><span>Overview</span></td> -->
     </tr>
   </thead>
   <tbody>
@@ -19,15 +19,15 @@ if (!isset($recipes)) {
     $site_url = site_url();
     while ($recipe = mysqli_fetch_array($recipes)) {
         echo "
-          <tr>
-            <td>{$recipe['id']}</td>
+          <tr class='table-row'>
+          <!-- <td>{$recipe['id']}</td> -->
             <td>{$recipe['title']}</td>
-            <td>{$recipe['cal']}</td>
-            <td>{$recipe['cookTime']}</td>
-            <td>{$recipe['overview']}</td>
-            <td>
-              <a href='../../admin/recipes/edit.php?id={$recipe['id']}'>Edit</a>
-              <a href='../../admin/recipes/delete.php?id={$recipe['id']}'>Delete</a>
+            <td class='table-nums'>{$recipe['cal']}</td>
+            <td class='table-nums'>{$recipe['cookTime']}</td>
+          <!-- <td>{$recipe['overview']}</td> -->
+            <td class='table-buttons'>
+              <a href='../../admin/recipes/edit.php?id={$recipe['id']}'><img class='edit-img' src='<?php echo site_url(); ?>/dist/images/edit.png'></a>
+              <a href='../../admin/recipes/delete.php?id={$recipe['id']}'><img class='delete-img' src='<?php echo site_url(); ?>/dist/images/delete.png'></a>
             </td>
           </tr>";
     }
