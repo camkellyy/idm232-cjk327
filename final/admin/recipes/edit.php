@@ -1,10 +1,10 @@
 <?php
 
 include_once __DIR__ . '/../../app.php';
-$title = "Edit Recipes";
-$header = "";
+$title = "Edit Recipe";
+$header = "EDIT RECIPE";
 $headerText = "";
-include_once __DIR__ . '/../../_components/header.php';
+include_once __DIR__ . '/../../_components/admin-header.php';
 ?>
 
 <?php
@@ -20,29 +20,29 @@ if ($result->num_rows > 0) {
 }
 
 ?>
-        <h1>Edit Recipe</h1>
-        <form action="../../_includes/process-edit-recipes.php" method="POST">
-            <div>
-                <label for="">Title</label>
-                <input type="text" name="title" value="<?php echo $recipe['title']?>">
+</header>
+        <form class="create-form" action="../../_includes/process-edit-recipes.php" method="POST">
+            <div class="block">
+                <label class="create-header" for="">Title</label>
+                <input class="create-field-input" type="text" name="title" value="<?php echo $recipe['title']?>">
             </div>
 
-            <div>
-                <label for="">Calories</label>
-                <input type="text" name="cal" value="<?php echo $recipe['cal']?>">
+            <div class="block">
+                <label class="create-header" for="">Calories</label>
+                <input class="create-field-input" type="text" name="cal" value="<?php echo $recipe['cal']?>">
             </div>
 
-            <div>
-                <label for="">Cook Time</label>
-                <input type="text" name="cookTime" value="<?php echo $recipe['cookTime']?>">
+            <div class="block">
+                <label class="create-header" for="">Cook Time</label>
+                <input class="create-field-input" type="text" name="cookTime" value="<?php echo $recipe['cookTime']?>">
             </div>
 
-            <div>
-                <label for="">Overview</label>
-                <input type="text" name="overview" value="<?php echo $recipe['overview']?>">
+            <div class="block">
+                <label class="create-header" for="">Overview</label>
+                <input class="create-field-input" type="text" name="overview" value="<?php echo $recipe['overview']?>">
             </div>
 
-              <input type="submit" value="Submit">
+              <input class="submit-buttons" type="submit" value="Submit">
 
               <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
             </form>
