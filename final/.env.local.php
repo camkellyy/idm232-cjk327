@@ -3,7 +3,7 @@
 $APP_CONFIG = [
     'environment' => 'development',
     'site_name' => 'CarbSense',
-    'site_url' => 'http://localhost:8888/final-starter',
+    'site_url' => 'http://localhost:8888/final',
     'database_host' => 'localhost',
     'database_user' => 'root',
     'database_pass' => 'root',
