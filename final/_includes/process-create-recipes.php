@@ -19,7 +19,7 @@ $result = mysqli_query($db_connection, $query);
 
 // Check there are no errors with our SQL statement
 if ($result) {
-    redirect_to('../../final/admin/recipes');
+    redirect_to('/admin/recipes');
 } else {
     $error_message = 'User was not updated';
     redirect_to('/admin/recipes?error=' . $error_message);

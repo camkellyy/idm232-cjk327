@@ -1,10 +1,10 @@
 <?php
 
 include_once __DIR__ . '/../../app.php';
-$title = "Create Recipes";
-$header = "";
+$title = "Add Recipe";
+$header = "ADD RECIPE";
 $headerText = "";
-include_once __DIR__ . '/../../_components/header.php';
+include_once __DIR__ . '/../../_components/admin-header.php';
 ?>
 
 <?php
@@ -13,30 +13,31 @@ $query = 'SELECT * FROM recipes';
 $result = mysqli_query($db_connection, $query);
 
 ?>
+</header>
 
-    <form action="../../_includes/process-create-recipes.php" method="POST">
+    <form class="create-form" action="../../_includes/process-create-recipes.php" method="POST">
         <div class="block">
-        <label for="">Title</label>
-        <input type="text" name="title">
+        <label class="create-header" for="">Title</label>
+        <input class="create-field-input" type="text" name="title">
         </div>
 
         <div class="block">
-        <label for="">Calories</label>
-        <input type="text" name="cal">
+        <label class="create-header" for="">Calories</label>
+        <input class="create-field-input" type="text" name="cal">
         </div>
 
 
         <div class="block">
-        <label for="">Time</label>
-        <input type="text" name="cookTime">
+        <label class="create-header" for="">Time</label>
+        <input class="create-field-input" type="text" name="cookTime">
         </div>
 
         <div class="block">
-        <label for="">Overview</label>
-        <input type="text" name="overview">
+        <label class="create-header" for="">Overview</label>
+        <textarea class="create-field" name="overview" id="" cols="30" rows="10"></textarea>
         </div>
 
-        <input type="submit" value="submit">
+        <input class="submit-buttons" type="submit" value="SUBMIT">
     </form>
 
 
