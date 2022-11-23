@@ -1,77 +1,34 @@
-<?php 
-$title = "Details";
-$header = "Garden Salad";
-$headerText = "View the ingredients and recipe steps below!";
-include_once 'app.php';
-include_once '_components/header.php';
+<?php
+include_once __DIR__ . '/app.php';
+$title = "Recipes";
+$header = "Recipes";
+$headerText = "Browse through all of our delicious and health concious recipes!";
+include_once __DIR__ . '/_components/header.php';
+include_once __DIR__ . '/_includes/recipe-functions.php';
+$recipes = get_recipe();
 ?>
+
+        <div class="search">
+          <form class="search-form" action="<?php echo site_url(); ?>/admin/search" method="GET">
+            <input class="search-field" type="text" name="search" id="search" placeholder="Search">
+            <button class="search-button" type="submit"><img class="search-img" src="<?php echo site_url(); ?>/dist/images/submit.png"></button>
+          </form>
+      </div>
 
     </header>
 
-    <div class="details-container">
-        <div class="overview">
-            <div class="overview-line1">
-                <h2 class="ingredients-headers">OVERVIEW</h2>
-                <p>5 mins | cals. 550</p>
-            </div>
-            <p class="overview-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not </p>
-        </div>
+        <?php
+        // If error query param exist, show error message
+          if (isset($_GET['error'])) {
+              echo '<p>' . $_GET['error'] . '</p>';
+          }
 
-        <div class="ingredients">
-            <h2 class="ingredients-headers">INGREDIENTS</h2>
+        ?>
 
-            <div class="ingredients-row1">
-                <input type="checkbox" id="ing1" name="ing1">
-                <label for="ing1">Lorem Ipsum</label><br>
-
-                <input type="checkbox" id="ing2" name="ing2">
-                <label for="ing2">Lorem Ipsum</label><br>
-
-                <input type="checkbox" id="ing3" name="ing3">
-                <label for="ing3">Lorem Ipsum</label><br>
-            </div>
-
-            <div class="ingredients-row2">
-                <input type="checkbox" id="ing4" name="ing4">
-                <label for="ing4">Lorem Ipsum</label><br>
-
-                <input type="checkbox" id="ing5" name="ing5">
-                <label for="ing5">Lorem Ipsum</label><br>
-
-                <input type="checkbox" id="ing6" name="ing6">
-                <label for="ing6">Lorem Ipsum</label><br>
-            </div>
-        </div>
-
-        <div class="recipe">
-            <h2 class="ingredients-headers">RECIPE</h2>
-
-            <div class="step1">
-                <h4>Step 1.</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-            </div>
-
-            <div class="step2">
-                <h4>Step 2.</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-            </div>
-
-            <div class="step3">
-                <h4>Step 3.</h4>
-                <p>Lorem Ipsum is simply dummy text</p>
-            </div>
-
-            <div class="step4">
-                <h4>Step 4.</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not</p>
-            </div>
-        </div>
+        <div>
+        <?php include __DIR__ . '/_components/block-recipes.php'; ?>
         </div>
 
 
-</body>
-</html>
 
-<?php 
-include_once '_components/footer.php'; 
-?>
+<?php include_once __DIR__ . '/_components/footer.php';

@@ -1,10 +1,4 @@
 <?php
-include_once __DIR__ . '/../app.php';
-$title = "Home";
-$header = "";
-$headerText = "";
-include_once __DIR__ . '/../_components/header.php';
-?>
-
-
-<?php include_once __DIR__ . '/../_components/footer.php';
+include __DIR__ . '/../app.php';
+// If someone lands on /admin, redirect them to /admin/users as the default page
+redirect_to('/admin/recipes.php');
