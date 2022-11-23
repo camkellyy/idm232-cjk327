@@ -31,18 +31,6 @@ p, h3 {
     padding: 0;
 }
 
-header {
-    align-items: center;
-    background-image: url('../images/header-bg.png');
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    height: 700px;
-    justify-content: center;
-}
-
 footer {
     background-color: #2E513E;
     margin-top: 5rem;
@@ -52,6 +40,131 @@ footer {
 .footer-text {
     color: white;
     text-align: center;
+}
+
+/* HEADERS */
+
+.header-main {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    background-image: url('../images/header-bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.header-admin {
+    padding-top: 200px;
+}
+
+.admin-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.admin-header-text {
+    color: black;
+    font-size: 2rem;
+    font-family: "Inter";
+}
+
+/* CREATE */
+
+.create-header {
+    color: grey;
+}
+
+.block {
+    margin-bottom: 1.5rem;
+}
+
+.create-field, .create-field-input {
+    border: 1px solid #2E513E;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+
+.create-field-input {
+    padding: 1rem 5.5rem 1rem 2rem;;
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TABLE */
+
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15rem;
+}
+
+tr {
+    display: flex;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 30px;
+}
+
+td {
+    width: 200px;
+}
+
+.table-row {
+    padding-left: 30px;
+    border: 1px solid grey;
+    display: flex;
+}
+
+.table-row-header {
+    padding-left: 30px;
+}
+
+.table-header {
+    color: grey;
+}
+
+.table-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table-buttons a {
+    padding-left: 5px;
+}
+
+
+
+/* BUTTONS */
+
+.admin-buttons {
+    border: none;
+    background-color: transparent;
+}
+
+.admin-buttons a, .submit-buttons {
+    color: #2E513E;
+    font-family: "Inter";
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #2E513E;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 1rem 2rem;
+}
+
+.admin-buttons a:hover, .submit-buttons:hover {
+    color: white;
+    background-color: #2E513E;
+    cursor: pointer;
 }
 
 /* CATEGORIES PAGE */
@@ -149,29 +262,56 @@ footer {
 
 /* SEARCH */
 
-.search {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 50px;
-    margin: 0.75rem;
-    padding: 10px 50px;
-    width: 600px;
-}
-
-.search-icon {
-    margin-right: 30px;
-}
-
-input {
+.search-field {
     height: 50px;
     border: none;
     outline: none;
     font-size: 18px;
     padding-left: 10px;
     background-color: transparent;
+    width: 600px;
 }
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    padding: 10px 50px;
+}
+
+.search-text {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search-text h2 {
+    color: black;
+}
+
+.search-results {
+    color: black;
+}
+
+.search-button {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-img {
+    height: 2rem;
+    width: 2rem;
+}
+
 
 /* RECIPES */
 
@@ -237,7 +377,7 @@ label {
     text-indent: -15px;
 }
 
-input {
+.checkbox {
     width: 15px;
     height: 15px;
     padding: 0;
@@ -251,10 +391,17 @@ input {
 nav{
     height: 6rem;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     position: fixed;
     z-index: 10;
+}
+
+.nav-main {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-admin {
+    background-color: rgba(46, 81, 62, 0.6);
 }
 
 /*Styling logo*/
@@ -300,25 +447,6 @@ nav{
 }
 .nav-links li a:hover::before{
     width: 80%;
-}
-
-/*Styling Buttons*/
-.login-button{
-    background-color: transparent;
-    border: 1.5px solid white;
-    border-radius: 2em;
-    color: white;
-    padding: .75rem 3rem;
-    margin-left: 2vw;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: ease-in-out 350ms;
-
-}
-.login-button:hover {
-    color: #131418;
-    background-color: white;
-    border:1.5px solid white;
 }
 
 /*Styling Hamburger Icon*/
@@ -383,9 +511,27 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1330px) {
+    table {
+        margin: 0 10rem;
+    }
+}
+
+@media screen and (max-width: 1175px) {
+    table {
+        margin: 0 5rem;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .details-container {
         width: 75%;
+    }
+    table {
+        margin: 0 2rem;
     }
 }
 
@@ -405,6 +551,10 @@ nav{
     .search {
         width: 350px;
     }
+
+    .table-buttons {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -419,6 +569,10 @@ nav{
     label {
         margin-right: 20px;
     }
+
+    .table-nums {
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -429,5 +583,11 @@ nav{
 
     .ingredients h2 {
         margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .table-title {
+        width: 170px;
     }
 }
