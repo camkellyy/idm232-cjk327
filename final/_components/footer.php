@@ -1,4 +1,4 @@
-<script src="./dist/scripts/app.js"></script>
+<script src="<?php echo site_url(); ?>/dist/scripts/app.js"></script>
 </body>
 
 <footer>

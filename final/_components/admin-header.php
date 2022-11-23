@@ -10,7 +10,7 @@
     <title><?php echo"$title"; ?></title>
 </head>
 <body>
-<nav class="nav-main">
+<nav class="nav-admin">
         <div class="logo">
             <h2 class="logo-text">CarbSense</h2>
         </div>
@@ -25,7 +25,8 @@
             <li><a href="<?php echo site_url(); ?>/admin/recipes/">Admin</a></li>
         </ul>
     </nav>
-    <header class="header-main">
-        <h1><?php echo"$header"; ?></h1>
-        <h2 class="header-blurb"><?php echo"$headerText"; ?></h2>
+    <header class="header-admin">
+        <div class="admin-header">
+            <h1 class="admin-header-text"><?php echo"$header"; ?></h1>
+            <h2 class="header-blurb"><?php echo"$headerText"; ?></h2>
     
