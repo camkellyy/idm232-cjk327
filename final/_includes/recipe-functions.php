@@ -7,7 +7,7 @@
 function get_recipe()
 {
     global $db_connection;
-    $query = 'SELECT * FROM recipes';
+    $query = 'SELECT * FROM recipes ORDER BY title ASC';
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
@@ -20,12 +20,12 @@ function get_recipe()
  * @param  string $phone - phone number of the user
  * @return object - mysqli_result
  */
-function add_recipe($title_value, $cal_value, $time_value, $overview_value)
+function add_recipe($title_value, $cal_value, $time_value, $overview_value, $image_value)
 {
     global $db_connection;
     $query = 'INSERT INTO recipes';
-    $query .= ' (title, cal, cooktime, overview)';
-    $query .= " VALUES ('$title_value', '$cal_value', '$time_value', '$overview_value')";
+    $query .= ' (title, cal, cooktime, overview, imagePath)';
+    $query .= " VALUES ('$title_value', '$cal_value', '$time_value', '$overview_value', '$image_value')";
     
     var_dump($query);
     die();

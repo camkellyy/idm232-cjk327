@@ -17,7 +17,7 @@ $recipes = get_recipe();
         ?>
 
       <div>
-        <button class="admin-buttons" type="button"><a href="../../admin/recipes/create.php">ADD RECIPE</a></button>
+        <a class="admin-buttons" href="<?php echo site_url(); ?>/admin/recipes/create.php">ADD RECIPE</a>
       </div>
     </div>
 
@@ -26,6 +26,8 @@ $recipes = get_recipe();
         <?php include __DIR__ . '/../../_components/table-recipes.php'; ?>
         </div>
   </header>
+
+  <div class="admin-margin"></div>
 
 
 <?php include_once __DIR__ . '/../../_components/footer.php';

@@ -34,11 +34,12 @@ if ($results->num_rows > 0) {
     <div class="search">
         <form class="search-form" action="<?php echo site_url(); ?>/admin/search" method="GET">
           <input class="search-field" type="text" name="search" id="search" placeholder="Search" value="<?php echo $search; ?>">
-          <button class="search-button" type="submit"><img class="search-img" src="<?php echo site_url(); ?>/dist/images/submit.png"></button>
+          <button class="search-button" type="submit"><img class="search-img" src="<?php echo site_url(); ?>/dist/images/submit.png" alt=""></button>
         </form>
     </div>
 
         </header>
+
 
         <div class="search-text">
             <h2>You searched for "<?php echo $search; ?>"</h2>
@@ -59,28 +60,28 @@ if ($results->num_rows > 0) {
         }
         ?>
 
+<div class='recipe-container'>
+    <div class='recipe-row'>
     <?php
     // If we have results, show them
+    $site_url = site_url();
       if ($recipe_results) {
           while ($recipe_results = mysqli_fetch_assoc($results)) {
             echo "
-            <div class='recipe-container'>
-              <div class='recipe-row'>
                   <div class='recipe'>
-                      <a href='../../details.php?id={$recipe_results['id']}'><img src='../../dist/images/asian-salad.png' alt='Asian Salad' class='recipe-img'></a>
+                  <a href='../../details.php?id={$recipe_results['id']}'><img class='table-img' src='{$site_url}{$recipe_results['imagePath']}' alt=''></a>
                       <div class='top-line'>
                           <h3>{$recipe_results['title']}</h4>
                           <p>{$recipe_results['cal']} cals.</p>
                       </div>
                       <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . {$recipe_results['cookTime']} mins</p>
                   </div>
-              </div>
-            </div>
             ";
           }
       }
     ?>
-
+    </div>
+</div>
 
 
 <?php include_once __DIR__ . '/../../_components/footer.php';

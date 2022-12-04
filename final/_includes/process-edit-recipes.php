@@ -6,14 +6,17 @@ if (!$_POST) {
 }
 
 // Store $_POST data to variables for readability
-$title_value = $_POST['title'];
-$cal_value = $_POST['cal'];
-$time_value = $_POST['cookTime'];
-$overview_value = $_POST['overview'];
-$id_value = $_POST['id'];
+$title_value = sanitize_value($_POST['title']);
+$cal_value = sanitize_value($_POST['cal']);
+$time_value = sanitize_value($_POST['cookTime']);
+$overview_value = sanitize_value($_POST['overview']);
+$image_value = sanitize_value($_POST['imagePath']);
+$ingredients_value = sanitize_value($_POST['ingredients']);
+$steps_value = sanitize_value($_POST['steps']);
+$id_value = sanitize_value($_POST['id']);
 
 // Create a SQL statement to insert the data into the database
-$query = "UPDATE recipes SET title = '{$title_value}', cal = '{$cal_value}', cooktime = '{$time_value}', overview = '{$overview_value}' WHERE id = {$id_value}";
+$query = "UPDATE recipes SET title = '{$title_value}', cal = '{$cal_value}', cooktime = '{$time_value}', overview = '{$overview_value}', imagepath = '{$image_value}', ingredients = '{$ingredients_value}', steps = '{$steps_value}' WHERE id = {$id_value}";
 
 // Run the SQL statement
 $result = mysqli_query($db_connection, $query);

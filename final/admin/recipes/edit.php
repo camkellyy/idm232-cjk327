@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
 
 ?>
 </header>
-        <form class="create-form" action="../../_includes/process-edit-recipes.php" method="POST">
+        <form class="create-form" action="<?php echo site_url(); ?>/_includes/process-edit-recipes.php" method="POST">
             <div class="block">
                 <label class="create-header" for="">Title</label>
                 <input class="create-field-input" type="text" name="title" value="<?php echo $recipe['title']?>">
@@ -38,11 +38,26 @@ if ($result->num_rows > 0) {
             </div>
 
             <div class="block">
-                <label class="create-header" for="">Overview</label>
-                <input class="create-field-input" type="text" name="overview" value="<?php echo $recipe['overview']?>">
+                <label class="create-header" for="">Image</label>
+                <input class="create-field-input" type="text" name="imagePath" value="<?php echo $recipe['imagePath']?>">
             </div>
 
-              <input class="submit-buttons" type="submit" value="Submit">
+            <div class="block">
+                <label class="create-header" for="">Overview</label>
+                <textarea class="create-field" type="text" name="overview" id="" cols="30" rows="10"><?php echo $recipe['overview']?></textarea>
+            </div>
+
+            <div class="block">
+                <label class="create-header" for="">Ingredients</label>
+                <textarea class="create-field" type="text" name="ingredients" id="" cols="30" rows="10"><?php echo $recipe['ingredients']?></textarea>
+            </div>
+
+            <div class="block">
+                <label class="create-header" for="">Recipe Steps</label>
+                <textarea class="create-field" type="text" name="steps" id="" cols="30" rows="10"><?php echo $recipe['steps']?></textarea>
+            </div>
+
+              <input class="submit-buttons" type="submit" value="SUBMIT">
 
               <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
             </form>

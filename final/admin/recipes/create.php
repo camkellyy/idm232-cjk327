@@ -15,26 +15,41 @@ $result = mysqli_query($db_connection, $query);
 ?>
 </header>
 
-    <form class="create-form" action="../../_includes/process-create-recipes.php" method="POST">
+    <form class="create-form" action="<?php echo site_url(); ?>/_includes/process-create-recipes.php" method="POST">
         <div class="block">
-        <label class="create-header" for="">Title</label>
+        <label class="create-header">Title</label>
         <input class="create-field-input" type="text" name="title">
         </div>
 
         <div class="block">
-        <label class="create-header" for="">Calories</label>
+        <label class="create-header">Calories</label>
         <input class="create-field-input" type="text" name="cal">
         </div>
 
 
         <div class="block">
-        <label class="create-header" for="">Time</label>
+        <label class="create-header">Time</label>
         <input class="create-field-input" type="text" name="cookTime">
         </div>
 
         <div class="block">
-        <label class="create-header" for="">Overview</label>
-        <textarea class="create-field" name="overview" id="" cols="30" rows="10"></textarea>
+        <label class="create-header">Image</label>
+        <input class="create-field-input" type="text" name="imagePath">
+        </div>
+
+        <div class="block">
+        <label class="create-header">Overview</label>
+        <textarea class="create-field" name="overview" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="block">
+        <label class="create-header">Ingredients</label>
+        <textarea class="create-field" name="ingredients" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="block">
+        <label class="create-header">Recipe Steps</label>
+        <textarea class="create-field" name="steps" cols="30" rows="10"></textarea>
         </div>
 
         <input class="submit-buttons" type="submit" value="SUBMIT">

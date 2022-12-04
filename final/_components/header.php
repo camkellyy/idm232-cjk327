@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Impact' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/dist/images/favicon.png">
+    <script src="https://cdn.tiny.cloud/1/0bgas6qrkl2s8yhdxsh3nwtkdekh5jjxzqjgtkn04ohw1n4i/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <title><?php echo"$title"; ?></title>
 </head>
 <body>
@@ -21,11 +23,12 @@
         </div>
         <ul class="nav-links">
             <li><a href="<?php echo site_url(); ?>/">Home</a></li>
+            <li><a href="<?php echo site_url(); ?>/recipes.php">Recipes</a></li>
             <li><a href="<?php echo site_url(); ?>/admin/search/">Search</a></li>
             <li><a href="<?php echo site_url(); ?>/admin/recipes/">Admin</a></li>
         </ul>
     </nav>
-    <header class="header-main">
+    <header class="header-main <?php echo"$headerImg"; ?>">
         <h1><?php echo"$header"; ?></h1>
         <h2 class="header-blurb"><?php echo"$headerText"; ?></h2>
     
