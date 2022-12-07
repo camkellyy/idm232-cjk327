@@ -25,8 +25,8 @@ if (!isset($recipes)) {
             <td class='table-nums'>{$recipe['cal']}</td>
             <td class='table-nums'>{$recipe['cookTime']}</td>
             <td class='table-buttons'>
-              <a href='../../admin/recipes/edit.php?id={$recipe['id']}'><img class='edit-img' src='../../dist/images/edit.png' alt=''></a>
-              <a href='../../admin/recipes/delete.php?id={$recipe['id']}'><img class='delete-img' src='../../dist/images/delete.png' alt=''></a>
+              <a href='{$site_url}/admin/recipes/edit.php?id={$recipe['id']}'><img class='edit-img' src='../../dist/images/edit.png' alt=''></a>
+              <a href='{$site_url}/admin/recipes/delete.php?id={$recipe['id']}'><img class='delete-img' src='../../dist/images/delete.png' alt=''></a>
             </td>
           </tr>";
     }

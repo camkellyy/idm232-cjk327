@@ -19,12 +19,12 @@ $recipes = get_recipe();
       <div>
         <a class="admin-buttons" href="<?php echo site_url(); ?>/admin/recipes/create.php">ADD RECIPE</a>
       </div>
+    </div>
 
 
         <div>
         <?php include __DIR__ . '/../../_components/table-recipes.php'; ?>
         </div>
-    </div>
   </header>
 
   <div class="admin-margin"></div>

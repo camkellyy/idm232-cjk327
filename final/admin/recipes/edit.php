@@ -61,5 +61,6 @@ if ($result->num_rows > 0) {
               <input class="submit-buttons" type="submit" value="SUBMIT">
 
               <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
+        </form>
 
 <?php include_once __DIR__ . '/../../_components/footer.php';

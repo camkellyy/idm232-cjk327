@@ -32,7 +32,7 @@ include_once '_components/header.php';
         <div class="overview">
             <div class="overview-line1">
                 <h2 class="ingredients-headers">OVERVIEW</h2>
-                <p><?php echo $recipe['cookTime']?> mins | cals. <?php echo $recipe['cal']?></p>
+                <div><?php echo $recipe['cookTime']?> mins | cals. <?php echo $recipe['cal']?></div>
             </div>
             <p class="overview-para"><?php echo $recipe['overview']?></p>
         </div>
@@ -46,11 +46,7 @@ include_once '_components/header.php';
             <h2 class="ingredients-headers">RECIPE</h2>
             <div class="steps"><?php echo $recipe['steps']?></div>
         </div>
-        </div>
-
-
-</body>
-</html>
+    </div>
 
 <?php 
 include_once '_components/footer.php'; 
