@@ -13,6 +13,7 @@ $query = 'SELECT * FROM recipes';
 $result = mysqli_query($db_connection, $query);
 
 ?>
+</div>
 </header>
 
     <form class="create-form" action="<?php echo site_url(); ?>/_includes/process-create-recipes.php" method="POST">

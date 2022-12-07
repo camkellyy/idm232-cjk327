@@ -71,10 +71,10 @@ if ($results->num_rows > 0) {
                   <div class='recipe'>
                   <a href='../../details.php?id={$recipe_results['id']}'><img class='table-img' src='{$site_url}{$recipe_results['imagePath']}' alt=''></a>
                       <div class='top-line'>
-                          <h3>{$recipe_results['title']}</h4>
+                          <h3>{$recipe_results['title']}</h3>
                           <p>{$recipe_results['cal']} cals.</p>
                       </div>
-                      <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . . {$recipe_results['cookTime']} mins</p>
+                      <p>Cook Time . . . . . . . . . . . . . . . . . . . . . . {$recipe_results['cookTime']} mins</p>
                   </div>
             ";
           }

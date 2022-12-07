@@ -20,54 +20,46 @@ if ($result->num_rows > 0) {
 }
 
 ?>
+</div>
 </header>
         <form class="create-form" action="<?php echo site_url(); ?>/_includes/process-edit-recipes.php" method="POST">
             <div class="block">
-                <label class="create-header" for="">Title</label>
+                <label class="create-header">Title</label>
                 <input class="create-field-input" type="text" name="title" value="<?php echo $recipe['title']?>">
             </div>
 
             <div class="block">
-                <label class="create-header" for="">Calories</label>
+                <label class="create-header">Calories</label>
                 <input class="create-field-input" type="text" name="cal" value="<?php echo $recipe['cal']?>">
             </div>
 
             <div class="block">
-                <label class="create-header" for="">Cook Time</label>
+                <label class="create-header">Cook Time</label>
                 <input class="create-field-input" type="text" name="cookTime" value="<?php echo $recipe['cookTime']?>">
             </div>
 
             <div class="block">
-                <label class="create-header" for="">Image</label>
+                <label class="create-header">Image</label>
                 <input class="create-field-input" type="text" name="imagePath" value="<?php echo $recipe['imagePath']?>">
             </div>
 
             <div class="block">
-                <label class="create-header" for="">Overview</label>
-                <textarea class="create-field" type="text" name="overview" id="" cols="30" rows="10"><?php echo $recipe['overview']?></textarea>
+                <label class="create-header">Overview</label>
+                <textarea class="create-field" name="overview" cols="30" rows="10"><?php echo $recipe['overview']?></textarea>
             </div>
 
             <div class="block">
-                <label class="create-header" for="">Ingredients</label>
-                <textarea class="create-field" type="text" name="ingredients" id="" cols="30" rows="10"><?php echo $recipe['ingredients']?></textarea>
+                <label class="create-header">Ingredients</label>
+                <textarea class="create-field" name="ingredients" cols="30" rows="10"><?php echo $recipe['ingredients']?></textarea>
             </div>
 
             <div class="block">
-                <label class="create-header" for="">Recipe Steps</label>
-                <textarea class="create-field" type="text" name="steps" id="" cols="30" rows="10"><?php echo $recipe['steps']?></textarea>
+                <label class="create-header">Recipe Steps</label>
+                <textarea class="create-field" name="steps" cols="30" rows="10"><?php echo $recipe['steps']?></textarea>
             </div>
 
               <input class="submit-buttons" type="submit" value="SUBMIT">
 
               <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
 <?php include_once __DIR__ . '/../../_components/footer.php';

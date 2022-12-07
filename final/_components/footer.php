@@ -17,9 +17,9 @@
         "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
     });
   </script>
-</body>
 
 <footer>
     <h3 class="footer-text">CarbSense 2022</h3>
 </footer>
+</body>
 </html>

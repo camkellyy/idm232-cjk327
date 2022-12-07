@@ -80,6 +80,12 @@ footer {
     z-index: 2;
 }
 
+.home-blurb {
+    color: white;
+    text-align: center;
+    width: 500px;
+}
+
 .hero-img {
     height: 700px;
     background-image: url(/final/dist/images/hero-img.png);
