@@ -34,7 +34,7 @@ include_once '_components/header.php';
                 <h2 class="ingredients-headers">OVERVIEW</h2>
                 <div><?php echo $recipe['cookTime']?> mins | cals. <?php echo $recipe['cal']?></div>
             </div>
-            <p class="overview-para"><?php echo $recipe['overview']?></p>
+            <div class="overview-para"><?php echo $recipe['overview']?></div>
         </div>
 
         <div class="ingredients">
